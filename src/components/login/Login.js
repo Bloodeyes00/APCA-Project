@@ -24,20 +24,20 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   console.log(firebase.auth());
-  const signInHandler = () => {};
+  const signInHandler = () => { };
   return (
     <div>
-    <div className="row offset-0">
-    <div className="col">
-   </div>
-   </div>
+      <div className="row offset-0">
+        <div className="col">
+        </div>
+      </div>
       <div autoComplete="">
         <div className=" mt-5  " id="LoginForm">
           <div className="row ">
             <div className=" col-5 offset-4 ">
               <div className="loginheader">
-              <img className="loginimge1" src={apcalogo} />
-              <h3 className="admin1 mt-2">LOGIN</h3>
+                <img className="loginimge1" src={apcalogo} />
+                <h3 className="admin1">LOGIN</h3>
               </div>
               <input
                 onChange={(e) => setEmail(e.target.value)}
@@ -53,18 +53,20 @@ function Login() {
               />{" "}
               <div className="Checkbox mt-2">
               </div>
+
+              
               <div className="ms-4">
                 {" "}
                 <button
                   onClick={(signInHandler, notify)}
 
-                  
+
                   className="btn btn-primary mt-4"
                   id="buttons"
                 >
                   Login
                 </button>{" "}
-               
+
               </div>
               <br />
             </div>
